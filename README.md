@@ -1,1 +1,0 @@
-# Academic-Manager-react
