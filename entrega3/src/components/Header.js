@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "../style/header.css";
 
-function Header(){
+function Header(props){
     return(
         <> 
             <div className='header'>
-                <span className='route'>Home</span>
+                <span className='route'>{props.route}</span>
             </div>
         </>
     )

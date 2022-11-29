@@ -1,0 +1,16 @@
+.logo-container{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.logo{
+    width: 10rem;
+}
+.title{
+    font-size: 3rem;
+    margin-left: 3rem;
+}
