@@ -2,13 +2,14 @@ import React from 'react';
 import {
 	FaAngleRight,
 	FaAngleLeft, 
-	FaChartBar, 
-	FaThLarge, 
-	FaShoppingCart, 
+	FaRegCalendarAlt, 
+	FaHome, 
+	FaUserAlt, 
 	FaCog,
 	FaSignOutAlt,
-	FaBars
+	FaBars,
 } from 'react-icons/fa';
+import {MdCalculate} from 'react-icons/md'
 import { NavLink } from "react-router-dom";
 import "../style/navbar.css";
 
@@ -46,29 +47,33 @@ function Navbar({visible, show}) {
 							/>
 					</NavLink>
 					<div className="links nav-top">
-						<NavLink to="/dashboard" className="nav-link">
-							<FaThLarge size={ICON_SIZE} />
-							<span>Dashboard</span>
+						<NavLink to="/cursos" className="nav-link">
+							<FaHome size={ICON_SIZE} />
+							<span>Cursos</span>
 						</NavLink>
-						<NavLink to="/analytics" className="nav-link">
-							<FaChartBar size={ICON_SIZE} />
-							<span>Analytics </span>
+						<NavLink to="/calendario" className="nav-link">
+							<FaRegCalendarAlt size={ICON_SIZE} />
+							<span>Calendario </span>
 						</NavLink>
-						<NavLink to="/orders" className="nav-link">
-							<FaShoppingCart size={ICON_SIZE} />
-							<span>Orders</span> 
+						<NavLink to="/notas" className="nav-link">
+							<MdCalculate size={ICON_SIZE} />
+							<span>Notas</span> 
+						</NavLink>
+						<NavLink to="/perfil" className="nav-link">
+							<FaUserAlt size={ICON_SIZE} />
+							<span>Perfil</span>
 						</NavLink>
 					</div>
 				</div>
 
 				<div className="links">
-					<NavLink to="/settings" className="nav-link">
+					<NavLink to="/configuraciones" className="nav-link">
 						<FaCog size={ICON_SIZE} />
 						<span>Settings</span> 
 					</NavLink>
-					<NavLink to="/Sign-out" className="nav-link">
+					<NavLink to="/log-in" className="nav-link">
 						<FaSignOutAlt size={ICON_SIZE} />
-						<span>Logout</span> 
+						<span>Cerrar sesion</span> 
 					</NavLink>
 				</div>
 			</nav>

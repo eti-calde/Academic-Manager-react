@@ -5,11 +5,12 @@ nav{
 	display:flex;
 	flex-direction:column;
 	justify-content: space-between;
-	width:15%;
+	width:17%;
 	min-height: 100vh;
-	background-color: #753ffd;
+	background-color: #7252FF;
 	padding:2rem 1rem 1rem 1rem;
 	transition: transform 1s;
+	z-index: 3;
 }
 
 .navbar{

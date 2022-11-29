@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Navbar from "./components/Navbar";
+import CoursesPage from "./pages/CoursesPage"
 import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
 import "./style/index.css";
 
@@ -11,25 +12,25 @@ function App() {
 			<div className="App">
 				<Navbar visible={ navVisible } show={ showNavbar } />
 				<Routes>
-					<Route path="/" element={<Navigate to="/dashboard" />} />
-					<Route path='/dashboard' element={
+					<Route path="/" element={<Navigate to="/log-in" />} />
+					<Route path='/cursos' element={
 						<div className={!navVisible ? "page" : "page page-with-navbar"}>
-							<h1>Dashboard</h1>
+							<CoursesPage></CoursesPage>
 						</div>
 					} />
-					<Route path='/analytics' element={
+					<Route path='/calendario' element={
 						<div className={!navVisible ? "page" : "page page-with-navbar"}>
-							<h1>Analystics</h1>
+							<h1>calendario</h1>
 						</div>
 					}/>
-					<Route path='/orders' element={
+					<Route path='/notas' element={
 						<div className={!navVisible ? "page" : "page page-with-navbar"}>
-							<h1>Orders</h1>
+							<h1>notas</h1>
 						</div>
 					}/>
-					<Route path='/settings' element={
+					<Route path='/perfil' element={
 						<div className={!navVisible ? "page" : "page page-with-navbar"}>
-							<h1>Settings</h1>
+							<h1>perfil</h1>
 						</div>
 					}/>
 				</Routes>
