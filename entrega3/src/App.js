@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import Navbar from "./components/Navbar";
 import CoursesPage from "./pages/CoursesPage"
 import CalendarioPage from './pages/CalendarioPage';
-import UniversityLogo from './components/UniversityLogo';
-import LogIn from './components/LogIn';
+import LogInPage from './pages/LogInPage'
 import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
 import "./style/index.css";
 
@@ -17,8 +16,7 @@ function App() {
 					<Route path="/" element={<Navigate to="/log-in" />} />
 					<Route path="/log-in" element={
 						<div>
-							<UniversityLogo></UniversityLogo>
-							<LogIn></LogIn>
+							<LogInPage></LogInPage>
 						</div>
 					} />
 					<Route path='/cursos' element={

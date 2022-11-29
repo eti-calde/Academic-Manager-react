@@ -1,5 +1,9 @@
 import React from 'react';
 import ControlledCheckbox from './Checkbox';
+import FullWidthTextField from './Textfield'
+import BasicButtons from './BasicButton'
+import { NavLink } from "react-router-dom";
+
 import "../style/log-in.css";
 
 function LogIn(){
@@ -14,16 +18,22 @@ function LogIn(){
                     <span className='purple-text'>¿Ya tienes una cuenta?</span>
                     <form className='form'>
                         <label>
-                            <input type="text" name="name" placeholder='Nombre de usuario'></input>
+                            <FullWidthTextField name="Nombre de usuario" className="input-text"></FullWidthTextField>
                         </label>
+                        <div className='space'></div>
                         <label>
-                            <input type="text" name="name" placeholder='Constraseña'></input>
+                        <FullWidthTextField name="Contraseña"></FullWidthTextField>
                         </label>
                         <div className='checkbox-container'>
                             <ControlledCheckbox></ControlledCheckbox>
                             <span>Recordar nombre de usuario</span>
                         </div>
-                        <input type="submit" value="Acceder" className='submit'/>
+                        <NavLink to="/cursos" className="nav-link">
+                            <BasicButtons content="Acceder"></BasicButtons>
+						</NavLink>
+                        <div className='space'></div>
+                        <span className='pink-text'>¿Olvidó su nombre de usuario o contraseña?</span>
+                        
                     </form>
                 </div>
             </div>
