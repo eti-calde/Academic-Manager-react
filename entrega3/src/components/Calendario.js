@@ -1,10 +1,12 @@
 import React from 'react';
+import {useState} from 'react'
 import "../style/calendar.css";
 import Calendar from 'react-calendar'; 
 import img1 from './../assets/Images/faker.jpg';
-import {useState} from 'react'
+
 function Calendario(){
     const [date, setDate] = useState(new Date())
+
     return (
         <>
             <div className="calendar-container">
@@ -21,7 +23,6 @@ function Calendario(){
                     <p>Certamen III: Computación Científica </p>
                 </div>
             </div>
-
         </>
     );
 }

@@ -1,0 +1,35 @@
+.informacion-container{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid salmon;
+}
+
+.informacion{
+    width: 11rem;
+    height: 4rem;
+    background-color: #7252FF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.marked{
+    background-color: #6A1986;
+}
+
+.info-buttons{
+    height: 20rem;
+    border: 5px solid salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button{
+    width: 15rem;
+    height: 4rem;
+    background-color: #7252FF;
+    border-radius: 12px;
+}

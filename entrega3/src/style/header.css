@@ -1,16 +1,15 @@
-.header{
-    width: auto;
+.header-container{
+    
     height: 5rem;
-    position: relative;
-    top: 0;
-    right: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     color: #ffffff;
     z-index: 2;
+    border: 5px solid salmon;
 }
 
 .route{
     padding-left: 5rem;
+    display: block;
 }
+

@@ -1,12 +1,16 @@
 import React from 'react';
 import Courses from "./../components/Courses"
 import Header from "./../components/Header"
+import './../style/pages.css'
 
 function CoursesPage(){
     return(
         <>
-            <Header route="Home"></Header>
-            <Courses></Courses>
+            <div className='page-container'>
+                <Header route="Home"></Header>
+                <div className='header-separator-home'></div>
+                <Courses></Courses>
+            </div>
         </>
     );
 }

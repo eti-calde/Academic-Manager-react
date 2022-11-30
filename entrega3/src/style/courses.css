@@ -1,6 +1,6 @@
 .courses-container {
     /* border: 8px solid chartreuse; */
-    width: 85%;
+    width: 95%;
     height: 70%;
     display: flex;
     flex-wrap: wrap;
@@ -9,8 +9,8 @@
 }
 
 .course{
-    width: 12rem ;
-    height: 12rem;
+    width: 14.5rem ;
+    height: 14rem;
     display: flex;
     flex-direction: column;
     
@@ -19,6 +19,7 @@
 
 .course-header{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: #6A1986;
@@ -32,3 +33,4 @@
     height: 80%;
     border-radius: 0px 0px 90px 30px;
 }
+

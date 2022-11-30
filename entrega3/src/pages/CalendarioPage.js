@@ -1,12 +1,17 @@
 import React from 'react';
-import Calendario from "../components/Calendario"
+import Calendar from "../components/Calendario"
 import Header from "./../components/Header"
+import './../style/pages.css'
+
 
 function CalendarioPage(){
     return(
         <>
-            <Header route="Home > Calendario"></Header>
-            <Calendario></Calendario>
+            <div className='page-container'>
+                <Header route="Home > Calendario"></Header>
+                <div className='header-separator-calendar'></div>
+                <Calendar></Calendar>
+            </div>
         </>
     );
 }
