@@ -1,13 +1,36 @@
-.page-container{
+.page-container-calendar{
     width: 90%;
     position: relative;
     bottom: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* border: 5px solid salmon; */
+    /* border: 5px solid seagreen; */
 }
+.page-container-course{
+    width: 90%;
+    position: relative;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 5px solid seagreen; */
+}
+
+.page-container-cc{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 5px solid seagreen; */
+}
+
 
 .header-separator-home{
     height: 20rem;
+}
+
+.header-separaton-computation{
+    height: 5rem;
 }

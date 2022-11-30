@@ -1,18 +1,18 @@
 import React from "react";
-import Computation from './../components/Computation'
+import Foro from './../components/Foro'
 import Header from "./../components/Header"
 import './../style/pages.css'
 
-function ComputationPage(){
+function ForoPage(){
     return(
         <>
             <div className='page-container-cc'>
-                <Header route="Home > Computación Científica > Información General"></Header>
+                <Header route="Home > Computación Científica > Información General > Foro"></Header>
                 <div className='header-separator-computation'></div>
-                <Computation></Computation>
+                <Foro></Foro>
             </div>
         </>
     );
 }
 
-export default ComputationPage
+export default ForoPage

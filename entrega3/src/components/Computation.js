@@ -1,8 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import "../style/computation.css";
 
 function Computation(){
-
+    const navigate = useNavigate();
     return (
       <>
         <div className='informacion-container'>
@@ -27,7 +28,7 @@ function Computation(){
         </div>
         <div className='info-buttons'>
             <div className='button'>Cronograma del Curso</div>
-            <div className='button'>Foro Estudiantes</div>
+            <div className='button' onClick={() => navigate('/cursos/computacion cientifica/foro')}>Foro Estudiantes</div>
             <div className='button'>Noticias y Avisos</div>
         </div>
       </>

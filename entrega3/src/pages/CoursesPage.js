@@ -6,7 +6,7 @@ import './../style/pages.css'
 function CoursesPage(){
     return(
         <>
-            <div className='page-container'>
+            <div className='page-container-course'>
                 <Header route="Home"></Header>
                 <div className='header-separator-home'></div>
                 <Courses></Courses>

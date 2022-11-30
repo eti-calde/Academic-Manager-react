@@ -22,6 +22,9 @@ function Calendario(){
                     <b> 2022-12-03</b>
                     <p>Certamen III: Computación Científica </p>
                 </div>
+                <div className='googlecalendar'>
+                    <p>Importar Google Calendar</p>
+                </div>
             </div>
         </>
     );

@@ -4,6 +4,7 @@ import CoursesPage from "./pages/CoursesPage"
 import CalendarioPage from './pages/CalendarioPage';
 import LogInPage from './pages/LogInPage'
 import ComputationPage from './pages/ComputacionPage';
+import ForoPage from './pages/ForoPage';
 import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
 import "./style/index.css";
 
@@ -48,6 +49,12 @@ function App() {
 						<div className={!navVisible ? "page" : "page page-with-navbar"}>
 							<Navbar visible={ navVisible } show={ showNavbar } />
 							<ComputationPage></ComputationPage>
+						</div>
+					}/>
+					<Route path='/cursos/computacion cientifica/foro' element={
+						<div className={!navVisible ? "page" : "page page-with-navbar"}>
+							<Navbar visible={ navVisible } show={ showNavbar } />
+							<ForoPage></ForoPage>
 						</div>
 					}/>
 				</Routes>

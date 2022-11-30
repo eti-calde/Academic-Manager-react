@@ -5,7 +5,7 @@
     align-items: center;
     color: #ffffff;
     z-index: 2;
-    border: 5px solid salmon;
+    /* border: 5px solid salmon; */
 }
 
 .route{

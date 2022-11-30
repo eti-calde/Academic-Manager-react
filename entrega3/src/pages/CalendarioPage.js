@@ -7,7 +7,7 @@ import './../style/pages.css'
 function CalendarioPage(){
     return(
         <>
-            <div className='page-container'>
+            <div className='page-container-calendar'>
                 <Header route="Home > Calendario"></Header>
                 <div className='header-separator-calendar'></div>
                 <Calendar></Calendar>
