@@ -1,11 +1,10 @@
 import React from 'react';
-import MultilneText from './../components/MultilineText'
 import "../style/foro.css";
 import {useState} from 'react'
 
 function Foro(){
 
-    const [btnSate, setBtnState] = useState(false)
+    const [btnSate, setBtnState] = useState(true)
     function handleClick(){
       setBtnState(btnSate => !btnSate);
     }
@@ -35,17 +34,18 @@ function Foro(){
             <p className='ayudantes'>• Ayudantía Solidaria (3 Respuestas) <span className='pink-text'>[unirse]</span></p>
             <p className='ayudantes'>• Dudas Tareas  (+9 Respuestas)<span className='pink-text'>[unirse]</span></p>
             <p className='ayudantes'>• Programas necesarios para tareas (2 Respuestas)<span className='pink-text'>[unirse]</span></p>
-            <p className={`ayudantes ${toggleClassCheck}`} id='hidden'>• Ayuda Certamen (2 Respuestas)<span className='pink-text'>[unirse]</span></p>
+            <p className={`ayudantes ${toggleClassCheck}`} id='hidden'>• Ayuda Certamen (0 Respuestas)<span className='pink-text'>[unirse]</span></p>
         </div>
         <div className='info-buttons'>
             <div>Crear un tema</div>
             <div className='cat-container-1'>
-            <MultilneText content="Titulo del Tema" default="Título"></MultilneText>
+              <label>Título del tema:</label>
+              <input type="text" className='input' ></input>
 
             </div>
             <div className='cat-container-2'>
-                
-                <MultilneText content="Descripción del Tema" default="Descripción"></MultilneText>
+              <label>Descripción del tema:</label>
+              <input type="text" className='input' ></input>
             </div>
         </div>
         <div className={`button`} onClick={handleClick}>Agregar Tema</div>

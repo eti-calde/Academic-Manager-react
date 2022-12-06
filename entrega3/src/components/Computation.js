@@ -27,7 +27,7 @@ function Computation(){
             <p className='ayudantes'>• Valeria Donoso (valeria.donoso@usm.cl)</p>
         </div>
         <div className='info-buttons'>
-            <div className='button'>Cronograma del Curso</div>
+            <div className='button' onClick={() => navigate('/cursos/computacion cientifica/cronograma')}>Cronograma del Curso</div>
             <div className='button' onClick={() => navigate('/cursos/computacion cientifica/foro')}>Foro Estudiantes</div>
             <div className='button'>Noticias y Avisos</div>
         </div>
